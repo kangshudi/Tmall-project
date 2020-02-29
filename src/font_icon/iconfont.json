@@ -1,0 +1,51 @@
+{
+  "id": "1663441",
+  "name": "tmall-icon",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "944224",
+      "name": "上拉菜单2",
+      "font_class": "shanglacaidan2",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "6332655",
+      "name": "下拉菜单",
+      "font_class": "xialacaidan",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "10054946",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "8157819",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "6144293",
+      "name": "天猫超市-购物车",
+      "font_class": "tianmaochaoshigouwuche",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "476973",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}
