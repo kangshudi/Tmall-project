@@ -6,6 +6,41 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "5940160",
+      "name": "飞机",
+      "font_class": "feiji",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "10767372",
+      "name": "下拉箭头",
+      "font_class": "xialajiantou",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "4712800",
+      "name": "下拉箭头",
+      "font_class": "pull_right",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "5903151",
+      "name": "一站式",
+      "font_class": "yizhanshi",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "6326753",
+      "name": "service-满88包邮",
+      "font_class": "88",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
       "icon_id": "944224",
       "name": "上拉菜单2",
       "font_class": "shanglacaidan2",
