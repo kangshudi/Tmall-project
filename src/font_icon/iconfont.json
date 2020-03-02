@@ -6,6 +6,62 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "11049858",
+      "name": "天猫超市-购物车",
+      "font_class": "tianmaochaoshi-gouwuche",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "12348",
+      "name": "充",
+      "font_class": "chong",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "280508",
+      "name": "纸巾",
+      "font_class": "zhijin",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "1795920",
+      "name": "食用油",
+      "font_class": "shiyongyou",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "2686515",
+      "name": "奶瓶",
+      "font_class": "naiping",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "4290046",
+      "name": "食品饮料",
+      "font_class": "shipinyinliao",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "5367016",
+      "name": "剪刀",
+      "font_class": "ziyuan",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "7107785",
+      "name": "口红",
+      "font_class": "kouhong",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
       "icon_id": "5940160",
       "name": "飞机",
       "font_class": "feiji",
