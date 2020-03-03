@@ -17,7 +17,7 @@ $(window).ready(function() {
 
 
 	//所有产品左边的竖导航
-	$('.j-LI').mousemove(function() {
+	$('.j-LI').mouseenter(function() {
 
 		var jTop = $(this).index() * $(this).innerHeight()
 		$('.j_NavBg').css({
@@ -47,6 +47,447 @@ $(window).ready(function() {
 		// display=block
 		catPb()
 			
+
+		// 鼠标移入导航的LI标签的时候加载ajax
+		if($(this).index() == 0){
+			$.ajax({
+				url:'../lib/daohangJson/jksp.json',
+				type:'GET',
+				dataType:'json',
+				success:function(res){
+					console.log(res.data)
+
+					var str = ''
+					res.data.cats.forEach((item,index) => {
+						str += `
+						<div class="subview-li">
+							<h4><a href="">${ item.title }</a></h4>
+							<p>`
+								item.cats.forEach((item2,index2) => {
+									str += `<a class="${ item2.highlight }" href="${ item2.link }">${ item2.text }</a>`	
+								})
+								
+							str +=`	
+							</p>
+						</div>
+
+						<div class="promo">
+							<div class="promo-brands">
+								<h4>品牌</h4>
+								<p>`
+								res.data.brands.forEach((item) => {
+									str += `<a href="${ item.link }">${ item.text }</a>`
+								})
+							str +=`
+								</p>
+							</div>
+							<div class="promo-acts">
+								<h4>品牌活动</h4>
+								<p>`
+								res.data.acts.forEach((item) => {
+									str += `<a href="${ item.link }">${ item.text }</a>`
+								})
+								str +=`
+								</p>
+							</div>
+						</div>
+						`;
+					})
+
+					$('.subview').html(str)
+
+
+				},
+				error:function(){
+					console.log('请求失败')
+				}
+			})
+		}
+
+		if($(this).index() == 1){
+			$.ajax({
+				url:'../lib/daohangJson/ylsp.json',
+				type:'GET',
+				dataType:'json',
+				success:function(res){
+					console.log(res.data)
+
+					var str = ''
+					res.data.cats.forEach((item,index) => {
+						str += `
+						<div class="subview-li">
+							<h4><a href="">${ item.title }</a></h4>
+							<p>`
+								item.cats.forEach((item2,index2) => {
+									str += `<a class="${ item2.highlight }" href="${ item2.link }">${ item2.text }</a>`	
+								})
+								
+							str +=`	
+							</p>
+						</div>
+
+						<div class="promo">
+							<div class="promo-brands">
+								<h4>品牌</h4>
+								<p>`
+								res.data.brands.forEach((item) => {
+									str += `<a href="${ item.link }">${ item.text }</a>`
+								})
+							str +=`
+								</p>
+							</div>
+							<div class="promo-acts">
+								<h4>品牌活动</h4>
+								<p>`
+								res.data.acts.forEach((item) => {
+									str += `<a href="${ item.link }">${ item.text }</a>`
+								})
+								str +=`
+								</p>
+							</div>
+						</div>
+						`;
+					})
+
+					$('.subview').html(str)
+
+
+				},
+				error:function(){
+					console.log('请求失败')
+				}
+			})
+		}
+
+		if($(this).index() == 2){
+			$.ajax({
+				url:'../lib/daohangJson/lyfs.json',
+				type:'GET',
+				dataType:'json',
+				success:function(res){
+					console.log(res.data)
+
+					var str = ''
+					res.data.cats.forEach((item,index) => {
+						str += `
+						<div class="subview-li">
+							<h4><a href="">${ item.title }</a></h4>
+							<p>`
+								item.cats.forEach((item2,index2) => {
+									str += `<a class="${ item2.highlight }" href="${ item2.link }">${ item2.text }</a>`	
+								})
+								
+							str +=`	
+							</p>
+						</div>
+
+						<div class="promo">
+							<div class="promo-brands">
+								<h4>品牌</h4>
+								<p>`
+								res.data.brands.forEach((item) => {
+									str += `<a href="${ item.link }">${ item.text }</a>`
+								})
+							str +=`
+								</p>
+							</div>
+							<div class="promo-acts">
+								<h4>品牌活动</h4>
+								<p>`
+								res.data.acts.forEach((item) => {
+									str += `<a href="${ item.link }">${ item.text }</a>`
+								})
+								str +=`
+								</p>
+							</div>
+						</div>
+						`;
+					})
+
+					$('.subview').html(str)
+
+
+				},
+				error:function(){
+					console.log('请求失败')
+				}
+			})
+		}
+
+		if($(this).index() == 3){
+			$.ajax({
+				url:'../lib/daohangJson/mrxk.json',
+				type:'GET',
+				dataType:'json',
+				success:function(res){
+					console.log(res.data)
+
+					var str = ''
+					res.data.cats.forEach((item,index) => {
+						str += `
+						<div class="subview-li">
+							<h4><a href="">${ item.title }</a></h4>
+							<p>`
+								item.cats.forEach((item2,index2) => {
+									str += `<a class="${ item2.highlight }" href="${ item2.link }">${ item2.text }</a>`	
+								})
+								
+							str +=`	
+							</p>
+						</div>
+
+						<div class="promo">
+							<div class="promo-brands">
+								<h4>品牌</h4>
+								<p>`
+								res.data.brands.forEach((item) => {
+									str += `<a href="${ item.link }">${ item.text }</a>`
+								})
+							str +=`
+								</p>
+							</div>
+							<div class="promo-acts">
+								<h4>品牌活动</h4>
+								<p>`
+								res.data.acts.forEach((item) => {
+									str += `<a href="${ item.link }">${ item.text }</a>`
+								})
+								str +=`
+								</p>
+							</div>
+						</div>
+						`;
+					})
+
+					$('.subview').html(str)
+
+
+				},
+				error:function(){
+					console.log('请求失败')
+				}
+			})
+		}
+		
+		if($(this).index() == 4){
+			$.ajax({
+				url:'../lib/daohangJson/jjjd.json',
+				type:'GET',
+				dataType:'json',
+				success:function(res){
+					console.log(res.data)
+
+					var str = ''
+					res.data.cats.forEach((item,index) => {
+						str += `
+						<div class="subview-li">
+							<h4><a href="">${ item.title }</a></h4>
+							<p>`
+								item.cats.forEach((item2,index2) => {
+									str += `<a class="${ item2.highlight }" href="${ item2.link }">${ item2.text }</a>`	
+								})
+								
+							str +=`	
+							</p>
+						</div>
+
+						<div class="promo">
+							<div class="promo-brands">
+								<h4>品牌</h4>
+								<p>`
+								res.data.brands.forEach((item) => {
+									str += `<a href="${ item.link }">${ item.text }</a>`
+								})
+							str +=`
+								</p>
+							</div>
+							<div class="promo-acts">
+								<h4>品牌活动</h4>
+								<p>`
+								res.data.acts.forEach((item) => {
+									str += `<a href="${ item.link }">${ item.text }</a>`
+								})
+								str +=`
+								</p>
+							</div>
+						</div>
+						`;
+					})
+
+					$('.subview').html(str)
+
+
+				},
+				error:function(){
+					console.log('请求失败')
+				}
+			})
+		}
+
+		if($(this).index() == 5){
+			$.ajax({
+				url:'../lib/daohangJson/jtqj.json',
+				type:'GET',
+				dataType:'json',
+				success:function(res){
+					console.log(res.data)
+
+					var str = ''
+					res.data.cats.forEach((item,index) => {
+						str += `
+						<div class="subview-li">
+							<h4><a href="">${ item.title }</a></h4>
+							<p>`
+								item.cats.forEach((item2,index2) => {
+									str += `<a class="${ item2.highlight }" href="${ item2.link }">${ item2.text }</a>`	
+								})
+								
+							str +=`	
+							</p>
+						</div>
+
+						<div class="promo">
+							<div class="promo-brands">
+								<h4>品牌</h4>
+								<p>`
+								res.data.brands.forEach((item) => {
+									str += `<a href="${ item.link }">${ item.text }</a>`
+								})
+							str +=`
+								</p>
+							</div>
+							<div class="promo-acts">
+								<h4>品牌活动</h4>
+								<p>`
+								res.data.acts.forEach((item) => {
+									str += `<a href="${ item.link }">${ item.text }</a>`
+								})
+								str +=`
+								</p>
+							</div>
+						</div>
+						`;
+					})
+
+					$('.subview').html(str)
+
+
+				},
+				error:function(){
+					console.log('请求失败')
+				}
+			})
+		}
+		
+		if($(this).index() == 6){
+			$.ajax({
+				url:'../lib/daohangJson/myyp.json',
+				type:'GET',
+				dataType:'json',
+				success:function(res){
+					console.log(res.data)
+
+					var str = ''
+					res.data.cats.forEach((item,index) => {
+						str += `
+						<div class="subview-li">
+							<h4><a href="">${ item.title }</a></h4>
+							<p>`
+								item.cats.forEach((item2,index2) => {
+									str += `<a class="${ item2.highlight }" href="${ item2.link }">${ item2.text }</a>`	
+								})
+								
+							str +=`	
+							</p>
+						</div>
+
+						<div class="promo">
+							<div class="promo-brands">
+								<h4>品牌</h4>
+								<p>`
+								res.data.brands.forEach((item) => {
+									str += `<a href="${ item.link }">${ item.text }</a>`
+								})
+							str +=`
+								</p>
+							</div>
+							<div class="promo-acts">
+								<h4>品牌活动</h4>
+								<p>`
+								res.data.acts.forEach((item) => {
+									str += `<a href="${ item.link }">${ item.text }</a>`
+								})
+								str +=`
+								</p>
+							</div>
+						</div>
+						`;
+					})
+
+					$('.subview').html(str)
+
+
+				},
+				error:function(){
+					console.log('请求失败')
+				}
+			})
+		}
+
+		if($(this).index() == 7){
+			$.ajax({
+				url:'../lib/daohangJson/myyp.json',
+				type:'GET',
+				dataType:'json',
+				success:function(res){
+					console.log(res.data)
+
+					var str = ''
+					res.data.cats.forEach((item,index) => {
+						str += `
+						<div class="subview-li">
+							<h4><a href="">${ item.title }</a></h4>
+							<p>`
+								item.cats.forEach((item2,index2) => {
+									str += `<a class="${ item2.highlight }" href="${ item2.link }">${ item2.text }</a>`	
+								})
+								
+							str +=`	
+							</p>
+						</div>
+
+						<div class="promo">
+							<div class="promo-brands">
+								<h4>品牌</h4>
+								<p>`
+								res.data.brands.forEach((item) => {
+									str += `<a href="${ item.link }">${ item.text }</a>`
+								})
+							str +=`
+								</p>
+							</div>
+							<div class="promo-acts">
+								<h4>品牌活动</h4>
+								<p>`
+								res.data.acts.forEach((item) => {
+									str += `<a href="${ item.link }">${ item.text }</a>`
+								})
+								str +=`
+								</p>
+							</div>
+						</div>
+						`;
+					})
+
+					$('.subview').html(str)
+
+
+				},
+				error:function(){
+					console.log('请求失败')
+				}
+			})
+		}
 		
 	})
 
@@ -61,9 +502,9 @@ $(window).ready(function() {
 		}
 	})
 
-	
 
-	// 移出事件
+
+	// 左边导航移出事件
 	$('.j-LI').mouseleave(function() {
 		$('.j_NavBg').css('visibility','hidden')
 		$('.one').css('color','#e22a40')
@@ -91,6 +532,7 @@ $(window).ready(function() {
 			'border-bottom': '1px solid #e5e5e5'
 		})
 	})
+
 
 })
 
@@ -141,6 +583,7 @@ function bannerGoods(){
 		type:'GET',
 		dataType:'json',
 		success:function(bannerGoods){
+			
 			var str = ''
 			bannerGoods.forEach((item,index) => {
 				str += `
@@ -156,6 +599,249 @@ function bannerGoods(){
 		}
 	})
 }
+
+
+// ajax请求按顺序 不同时间发送请求
+noTimeAjax()
+function noTimeAjax(){
+	var time = setTimeout(function(){
+		jinkoulsGoods()
+		xiuxianlsGoods()
+		grhlGoods()
+	},100)
+}
+
+
+// 请求进口零食速食数据
+// jinkoulsGoods()
+function jinkoulsGoods(){
+	$.ajax({
+		url:'../lib/jinkoulsGoods.json',
+		type:'GET',
+		dataType:'json',
+		success:function(res){
+			// 渲染中间商品列表
+			var datas_201507200 = res.data.resultValue[201507200].data
+			var str = ''
+			datas_201507200.forEach((item,index) => {
+				//如果a标签想跳转 ${ item.link }
+				str += `
+				<a href="">
+				<div class="wrap">
+					<img width="160" height="160" src="${ item.img }" alt="${ item.title }">
+					<h3></h3>
+					<p class="title">${ item.title }</p>
+					<p class="o-price">
+						<i class="yen">¥</i>
+						${ item.price }
+					</p>
+					<p class="price">
+						<i class="yen">¥</i>
+						<span class="j_CurPrice">${ item.promPrice }</span>
+					</p>
+
+					<div class="ui-cart">
+						加
+					</div>
+				</div>
+			</a>`;
+				$('.list').html(str)
+			})
+
+			// 渲染九宫格单词
+			var datas_201507201 = res.data.resultValue[201507201].data
+			var str_9gong = ''
+			datas_201507201.forEach((item2,index2) => {
+				str_9gong += `
+				<a class="outer" href="${ item2.link }">
+					<span class="inner">
+						<b class="text">${ item2.title }</b>
+					</span>
+				</a>`;
+			})
+			$('.words').html(str_9gong)
+
+			// 渲染九宫单词下面的 大背景图片
+			var datas_2015051810 = res.data.resultValue[2015051810].data[0]
+			var str_big = `<img width="240" height="296" src="${ datas_2015051810.img }" alt="">`;
+			$('.banner').html(str_big)
+
+			
+			// 渲染右边的品牌优惠 两张大图
+			var datas_2015051812 = res.data.resultValue[2015051812].data
+			var str_pin = ''
+			datas_2015051812.forEach((item4,index4) => {
+				str_pin += `
+				<img class="title" src="//img.alicdn.com/tps/i4/TB14fMEIFXXXXc8XFXXzAd2FVXX-150-39.png" alt="">
+				<a href="${ item4.link }">
+					<img width="150" height="263" src="${ item4.img }" alt="">
+				</a>`;
+			})
+
+			$('.m-floor .promo').html(str_pin)
+
+		},
+		error:function(){
+			console.log('请求失败')
+		}
+	})
+}
+
+// 请求 休闲零食 的数据
+// xiuxianlsGoods()
+function xiuxianlsGoods(){
+	$.ajax({
+		url:'../lib/xiuxianlsGoods.json',
+		type:'GET',
+		dataType:'json',
+		success:function(res){
+			// 渲染中间商品列表
+			var datas_201506256 = res.data.resultValue[201506256].data
+			var str = ''
+			datas_201506256.forEach((item,index) => {
+				//如果a标签想跳转 ${ item.link }
+				str += `
+				<a href="">
+				<div class="wrap">
+					<img width="160" height="160" src="${ item.img }" alt="${ item.title }">
+					<h3></h3>
+					<p class="title">${ item.title }</p>
+					<p class="o-price">
+						<i class="yen">¥</i>
+						${ item.price }
+					</p>
+					<p class="price">
+						<i class="yen">¥</i>
+						<span class="j_CurPrice">${ item.promPrice }</span>
+					</p>
+
+					<div class="ui-cart">
+						加
+					</div>
+				</div>
+			</a>`;
+				
+			})
+
+			$('.xiuxianls .list').html(str)
+
+			// 渲染九宫格单词
+			var datas_201506257 = res.data.resultValue[201506257].data
+			var str_9gong = ''
+			datas_201506257.forEach((item2,index2) => {
+				str_9gong += `
+				<a class="outer" href="${ item2.link }">
+					<span class="inner">
+						<b class="text">${ item2.title }</b>
+					</span>
+				</a>`;
+			})
+			$('.xiuxianls .words').html(str_9gong)
+
+			// 渲染九宫单词下面的 大背景图片
+			var datas_2015051822 = res.data.resultValue[2015051822].data[0]
+			var str_big = `<img width="240" height="296" src="${ datas_2015051822.img }" alt="">`;
+			$('.xiuxianls .banner').html(str_big)
+
+			
+			// 渲染右边的品牌优惠 两张大图
+			var datas_2015051824 = res.data.resultValue[2015051824].data
+			var str_pin = ''
+			datas_2015051824.forEach((item4,index4) => {
+				str_pin += `
+				<img class="title" src="//img.alicdn.com/tps/i4/TB14fMEIFXXXXc8XFXXzAd2FVXX-150-39.png" alt="">
+				<a href="${ item4.link }">
+					<img width="150" height="263" src="${ item4.img }" alt="">
+				</a>`;
+			})
+
+			$('.xiuxianls .promo').html(str_pin)
+
+		},
+		error:function(){
+			console.log('请求失败')
+		}
+	})
+}
+
+
+// 请求 个人护理  避孕套数据 数据
+// grhlGoods()
+function grhlGoods(){
+	$.ajax({
+		url:'../lib/grhlGoods.json',
+		type:'GET',
+		dataType:'json',
+		success:function(res){
+			
+			// 渲染中间商品列表
+			var datas_2015062522 = res.data.resultValue[2015062522].data
+			var str = ''
+			datas_2015062522.forEach((item,index) => {
+				//如果a标签想跳转 ${ item.link }
+				str += `
+				<a href="">
+				<div class="wrap">
+					<img width="160" height="160" src="${ item.img }" alt="${ item.title }">
+					<h3></h3>
+					<p class="title">${ item.title }</p>
+					<p class="o-price">
+						<i class="yen">¥</i>
+						${ item.price }
+					</p>
+					<p class="price">
+						<i class="yen">¥</i>
+						<span class="j_CurPrice">${ item.promPrice }</span>
+					</p>
+
+					<div class="ui-cart">
+						加
+					</div>
+				</div>
+			</a>`;
+			})
+			$('.grhl .list').html(str)
+
+			// 渲染九宫格单词
+			var datas_2015062523 = res.data.resultValue[2015062523].data
+			var str_9gong = ''
+			datas_2015062523.forEach((item2,index2) => {
+				str_9gong += `
+				<a class="outer" href="${ item2.link }">
+					<span class="inner">
+						<b class="text">${ item2.title }</b>
+					</span>
+				</a>`;
+			})
+			$('.grhl .words').html(str_9gong)
+
+			// 渲染九宫单词下面的 大背景图片
+			var datas_2015051870 = res.data.resultValue[2015051870].data[0]
+			var str_big = `<img width="240" height="296" src="${ datas_2015051870.img }" alt="">`;
+			$('.grhl .banner').html(str_big)
+
+			
+			// 渲染右边的品牌优惠 两张大图
+			var datas_2015051872 = res.data.resultValue[2015051872].data
+			var str_pin = ''
+			datas_2015051872.forEach((item4,index4) => {
+				str_pin += `
+				<img class="title" src="//img.alicdn.com/tps/i4/TB14fMEIFXXXXc8XFXXzAd2FVXX-150-39.png" alt="">
+				<a href="${ item4.link }">
+					<img width="150" height="263" src="${ item4.img }" alt="">
+				</a>`;
+			})
+
+			$('.grhl .promo').html(str_pin)
+
+		},
+		error:function(){
+			console.log('请求失败')
+		}
+	})
+}
+
+
 
 
 

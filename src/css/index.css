@@ -912,6 +912,11 @@ div.subview-li p a{
 }
 
 div.subview
+div.subview-li p a.H{
+	color: #e22a40!important;
+}
+
+div.subview
 div.promo{
 	position: absolute;
     right: 0;
@@ -1082,7 +1087,7 @@ div.tm-sildebar a img{
 /* 天猫超超市 轮播图下面的一层一层*/
 div.tm-chaoshi-floor{
 	clear: left;
-	max-height: 559px;
+	/* max-height: 559px; */
 }
 
 div.tm-chaoshi-floor
@@ -1274,6 +1279,19 @@ div.recommend .words a{
 }
 
 div.content
+div.recommend .words .outer:hover{
+	background: none;
+	text-decoration: underline;
+	border-color: #7a7878;
+	color: #fff;
+}
+
+div.content
+div.recommend .words .outer:hover b{
+	color: #fff;
+}
+
+div.content
 div.recommend .words .inner{
 	display: table-cell;
     vertical-align: middle;
@@ -1302,8 +1320,8 @@ div.recommend .banner{
     height: 296px;
 }
 
-
-div.content
+/* div.content */
+div.m-floor
 div.promo{
 	position: relative;
     width: 150px;
@@ -1328,4 +1346,169 @@ div.content
 div.promo a{
 	position: relative;
     display: block;
+}
+
+
+
+
+
+/* 超市底部的快捷入口 */
+div.tb-module{
+	width: 1190px;
+	display: block;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+div.tb-module
+div.shortcut{
+	background-color: #efefef;
+    border-top: 1px solid #e4e4e4;
+    padding: 20px 0;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+div.tb-module
+div.shortcut ul{
+	width: 1190px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+div.tb-module
+div.shortcut ul li{
+	float: left;
+    height: 95px;
+    width: 197px;
+    padding: 20px;
+    border-left: 1px solid #e4e4e4;
+    margin-left: -1px;
+    list-style: none;
+}
+
+div.shortcut ul li h3{
+	font-size: 16px;
+	color: #e8394e;
+	font-style: normal;
+	font-weight: 400;
+}
+
+div.shortcut ul li 
+b.iconfont{
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+    font-size: 25px;
+	vertical-align: -2px;
+}
+
+div.shortcut ul li p{
+	margin-bottom: 5px;
+    float: left;
+    width: 100%;
+    color: #444;
+    text-decoration: none;
+}
+
+div.shortcut ul li p a{
+	margin-bottom: 5px;
+    float: left;
+    width: 50%;
+    color: #444;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* 底部导航 */
+div.footer{
+	width: 100%;
+    margin: 0px auto;
+    border-top-style: solid;
+    border-top-width: 1px;
+	border-top-color: #e7e7e7;
+	font-size: 12px;
+    font-family: Arial;
+}
+div.footer_desc{
+	width: 1190px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #e7e7e7;
+    padding-top: 30px;
+	margin: 0px auto;
+	position: relative;
+}
+div.footer_desc div.descColumn{
+    width: 15%;
+    float: left;
+    padding-left: 15px;
+}
+div.footer_desc
+ div.descColumn 
+ span.descColumnTitle{
+    color: #646464;
+    font-weight: bold;
+    font-size: 16px;
+}
+div.footer_desc a{
+    display: block;
+    padding-top: 3px;
+}
+
+div.descColumn:nth-of-type(1){
+	margin-left: 220px;
+}
+img.tm-chaoshi-img{
+	position: absolute;
+	left: 0;
+	top: 22px;
+}
+
+div.copyright{
+    background-color: #C40000;
+    border-top: 2px solid #FF0036;
+}
+div.copyright span.slash{
+    color: white;
+}
+div.footer div.copyright div.white_link a{
+    color: white;
+    padding: 0px 5px;
+}
+div.footer div.copyright div.white_link{
+    padding: 10px 0px;
+	width: 1190px;
+	margin: 0 auto;
+}
+div.license{
+	width: 1190px;
+	margin: 0 auto;
+    padding-bottom: 30px;
+}
+div.license span{
+    color: #A4A4A4;
+}
+div.license div.copyRightYear{
+    margin: 10px 0px;
+    color: #686868;
+}
+img.cateye{
+    margin-left: 0;
+}
+
+div.maotou{
+	position: relative;
+	width: 1190px;
+	margin: 0 auto;
+}
+
+div.footer-2{
+	border-top-color: #fff;
 }

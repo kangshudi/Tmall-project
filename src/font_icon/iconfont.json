@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "4528475",
+      "name": "挂牌",
+      "font_class": "guapai",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "6895294",
+      "name": "百货商场购物中心",
+      "font_class": "baihuoshangchanggouwuzhongxin",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "11295110",
+      "name": "三明治",
+      "font_class": "icon-test",
+      "unicode": "e876",
+      "unicode_decimal": 59510
+    },
+    {
+      "icon_id": "12110766",
+      "name": "sell",
+      "font_class": "sell",
+      "unicode": "e6c2",
+      "unicode_decimal": 59074
+    },
+    {
       "icon_id": "11049858",
       "name": "天猫超市-购物车",
       "font_class": "tianmaochaoshi-gouwuche",
