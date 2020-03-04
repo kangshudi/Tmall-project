@@ -55,7 +55,7 @@ $(window).ready(function() {
 				type:'GET',
 				dataType:'json',
 				success:function(res){
-					console.log(res.data)
+					// console.log(res.data)
 
 					var str = ''
 					res.data.cats.forEach((item,index) => {
@@ -110,7 +110,7 @@ $(window).ready(function() {
 				type:'GET',
 				dataType:'json',
 				success:function(res){
-					console.log(res.data)
+					// console.log(res.data)
 
 					var str = ''
 					res.data.cats.forEach((item,index) => {
@@ -165,7 +165,7 @@ $(window).ready(function() {
 				type:'GET',
 				dataType:'json',
 				success:function(res){
-					console.log(res.data)
+					// console.log(res.data)
 
 					var str = ''
 					res.data.cats.forEach((item,index) => {
@@ -220,7 +220,7 @@ $(window).ready(function() {
 				type:'GET',
 				dataType:'json',
 				success:function(res){
-					console.log(res.data)
+					// console.log(res.data)
 
 					var str = ''
 					res.data.cats.forEach((item,index) => {
@@ -275,7 +275,7 @@ $(window).ready(function() {
 				type:'GET',
 				dataType:'json',
 				success:function(res){
-					console.log(res.data)
+					// console.log(res.data)
 
 					var str = ''
 					res.data.cats.forEach((item,index) => {
@@ -330,7 +330,7 @@ $(window).ready(function() {
 				type:'GET',
 				dataType:'json',
 				success:function(res){
-					console.log(res.data)
+					// console.log(res.data)
 
 					var str = ''
 					res.data.cats.forEach((item,index) => {
@@ -385,7 +385,7 @@ $(window).ready(function() {
 				type:'GET',
 				dataType:'json',
 				success:function(res){
-					console.log(res.data)
+					// console.log(res.data)
 
 					var str = ''
 					res.data.cats.forEach((item,index) => {
@@ -440,7 +440,7 @@ $(window).ready(function() {
 				type:'GET',
 				dataType:'json',
 				success:function(res){
-					console.log(res.data)
+					// console.log(res.data)
 
 					var str = ''
 					res.data.cats.forEach((item,index) => {

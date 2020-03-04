@@ -1,0 +1,482 @@
+/*登陆页面
+ login.html
+ * */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+div#loginDiv a {
+	text-decoration: none;
+	color: #999999;
+}
+
+div#loginDiv a:hover {
+	color: #C40000;
+}
+
+div.simpleLogo {
+	padding: 32px 0px;
+}
+
+img.loginBackgroundImg {
+	width: 1190px;
+	height: 600px;
+	display: block;
+	margin: 0px auto;
+	background-size: 100%;
+}
+
+div.loginSmallDiv {
+	position: absolute;
+	width: 320px;
+	height: 400px;
+	background: white;
+	top: 200px;
+	right: 500px;
+	padding: 60px 25px 80px 25px;
+}
+
+div.login_text {
+	font-family: "微软雅黑";
+	font-size: 16px;
+	padding: 15px 0;
+	font-weight: bold;
+}
+
+div.loginInput {
+	height: 40px;
+	margin: 20px 0;
+	border: 1px solid #CBCBCB;
+}
+
+div.loginInput span.inputIcon {
+	width: 40px;
+	height: 40px;
+	background: #CBCBCB;
+}
+
+div.loginInput span.glyphicon {
+	position: relative;
+	top: 9px;
+	left: 9px;
+	font-size: 22px;
+	color: #606060;
+}
+
+div.loginInput span,
+div.loginInput input {
+	display: inline-block;
+}
+
+div.loginInput input {
+	width: 78%;
+	height: 25px;
+	border: none;
+}
+
+div#loginBtn {
+	width: 100%;
+	text-align: center;
+}
+
+div#loginBtn button.btn {
+	width: 100%;
+	font-size: 14px;
+	background-color: #ff0036;
+	color: #fff;
+}
+
+
+
+/*页面register.html*/
+
+div#registerBtn {
+	width: 100%;
+	text-align: center;
+}
+
+div#registerBtn input#btn {
+	width: 80%;
+	margin: .5rem 0;
+}
+
+
+/*页面index.html*/
+
+nav.navbar-default {
+	background-color: #ececec;
+}
+
+div.get_username {
+	position: absolute;
+	width: 15%;
+	height: 100%;
+	display: inline-block;
+	/*border: 1px solid black;*/
+	line-height: 55px;
+	font-size: 12px;
+}
+
+div.get_username span#get_username {
+	/*width: 35%;
+	height: 50%;*/
+	display: inline-block;
+	/*font-size: 12px;*/
+	/*border: 1px solid red;*/
+	/*margin: 10px auto;*/
+}
+
+div.row{
+	margin-bottom: 10px;
+}
+
+div.row div.col-md-4 {
+	margin: 20px 0 0 0;
+	/*border: 1px solid red;*/
+}
+
+div.row div.thumbnail {
+	border-radius: 10px;
+}
+
+div.thumbnail .caption p {
+	margin: 5px 0 0 0;
+}
+
+
+/*书香自营*/
+
+div.thumbnail .caption p::before {
+	content: '书香自营';
+	background: #f66;
+	color: white;
+	font-weight: normal;
+	padding: 0 6px;
+	height: 16px;
+	border-radius: 3px;
+	margin-top: 5px;
+	overflow: hidden;
+}
+
+
+/*满50减100*/
+
+div.thumbnail .caption p::after {
+	content: '满50减100';
+	background: #f66;
+	color: white;
+	font-weight: normal;
+	padding: 0 6px;
+	height: 16px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+div.thumbnail .caption p span.bay {
+	display: block;
+	line-height: 28px;
+	background: #ff2832;
+	border-radius: 3px;
+	color: #fff;
+	text-align: center;
+	font-family: 'Microsoft Yahei';
+	font-size: 12px;
+	padding: 2px;
+}
+
+div.thumbnail .caption p span.read {
+	line-height: 28px;
+	background: #ffedee;
+	color: #ff2832;
+	border: 1px solid #ff2832;
+	display: block;
+	border-radius: 3px;
+	text-align: center;
+	font-family: 'Microsoft Yahei';
+	font-size: 12px;
+	padding: 2px;
+	margin: 8px 0 0 0;
+}
+
+
+/*list.html页面*/
+
+div.row .col-md-3 {
+	width: 32%;
+	border-radius: 5%;
+	border: 1px solid #DDDDDD;
+}
+
+div.row .col-md-3 .con h2 {
+	font-size: 20px;
+	color: #C40000;
+	font-weight: bold;
+	font-family: "Microsoft Yahei";
+	margin: 0;
+}
+
+
+/*购物卷*/
+
+div.col-md-3 div.con .div.row .col-md-3 {
+	width: 31%;
+	height: 70px;
+	display: inline-block;
+	position: relative;
+	margin: .5rem .1rem .5rem .1rem;
+}
+
+div.mod_coupon_info {
+	height: 62px;
+	padding: 0 8px;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	border-top: 5px solid #f7f7f7;
+	margin-top: 15px;
+}
+
+div.mod_coupon_info p.c_type {
+	position: absolute;
+	z-index: 0;
+	width: 72px;
+	height: 72px;
+	border: 3px solid #eee;
+	border-radius: 50%;
+	top: -11px;
+	left: -4px;
+	color: #8C8C8C;
+	line-height: 35px;
+	text-align: center;
+	font-size: 25px;
+	color: #d2cccc;
+}
+
+div.mod_coupon_info .c_count {
+	color: #7ea7ce;
+	margin-left: 150px;
+}
+
+div.mod_coupon_info .c_count .yen {
+	position: absolute;
+	left: 150px;
+	bottom: 15px;
+	font-size: 15px;
+}
+
+div.mod_coupon_info .c_count .num {
+	padding-left: 7px;
+	font-weight: 700;
+	font-size: 24px;
+	position: relative;
+	top: 15px;
+	display: block;
+	max-width: 52px;
+}
+
+div.mod_coupon_info .c_desc {
+	position: relative;
+	padding-left: 3px;
+	line-height: 25px;
+	height: 12px;
+	margin-top: 23px;
+	font-size: 10px;
+	color: #999;
+}
+
+div.mod_coupon div.mod_coupon_more {
+	color: #FFFFFF;
+	background-image: linear-gradient(-180deg, #7da7ce, #5f92c2 95%);
+}
+
+div.mod_coupon:nth-of-type(2) div.mod_coupon_more {
+	color: #FFFFFF;
+	background-image: linear-gradient(-179deg, #73d2d4 2%, #53c7ca 99%);
+}
+
+div.mod_coupon:nth-of-type(3) div.mod_coupon_more {
+	color: #FFFFFF;
+	background-image: linear-gradient(-179deg, #73d2d4 2%, #53c7ca 99%);
+}
+
+.goodsItem {
+	width: 360px;
+	/*height: 500px;*/
+	float: left;
+	border: 1px solid #ccc;
+	margin: 15px;
+	border-radius: 10px;
+}
+
+#goods {
+	width: 910px;
+}
+
+.goditem {
+	list-style: none;
+}
+
+.goditem span.read{
+	width: 95%;	
+	height: 36px;
+	line-height: 28px;
+	background: #ffedee;
+	color: #C40000;
+	border: 1px solid #ff2832;
+	display: block;
+	border-radius: 10px;
+	text-align: center;
+	font-family: 'Microsoft Yahei';
+	font-size: 12px;
+	padding: 2px;
+	margin: 10px;
+}
+
+
+.goditem h3{
+	margin: 10px;
+}
+
+.godpic img {
+	display: block;
+	width: 200px;
+	height: 200px;
+	margin: 0px auto;
+}
+
+.godinfo,
+.godadd {
+	display: block;
+	/*width: 220px;*/
+	margin: 0px;
+	/*text-align: center;*/
+}
+
+.godprice {
+	font-size: 20px;
+	color: #f00;
+	margin: 10px;
+}
+
+.godinfo {
+	/*text-align: center;*/
+	font-size: 14px;
+	margin: 10px;
+}
+
+.godinfo::after{
+	content: '满50减100';
+	background: #f66;
+	color: white;
+	font-weight: normal;
+	padding: 0 6px;
+	height: 16px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.godadd a {
+	display: block;
+	width: 95%;
+	height: 36px;
+	background-color: #fd6a01;
+	border-radius: 10px;
+	margin: 10px;
+	text-decoration: none;
+	color: #fff;
+	line-height: 36px;
+	text-align: center;
+}
+
+#godcar {
+	position: relative;
+	display: inline-block;
+	left: 0;
+	top: -10%;
+}
+
+#godcar .dnum {
+	width: 20px;
+	height: 20PX;
+	border-radius: 12px;
+	background-color: #f00;
+	text-align: center;
+	line-height: 20px;
+	position: absolute;
+	font-size: 12px;
+	color: white;
+	bottom: 0px;
+	}
+
+.bg {
+	background-color: #808080;
+}
+.godadd::before{
+	content: '书香自营';
+	background: #f66;
+	color: white;
+	font-weight: normal;
+	padding: 0 6px;
+	height: 16px;
+	border-radius: 3px;
+	margin-top: 5px;
+	overflow: hidden;
+	margin: 15px;
+}
+
+
+/*ShoppingCart.html页面*/
+.clear{clear: both;}
+.buyCar{width: 1138px;height: 450px;margin: 0 auto;}
+.top{width: 1135px;height: 40px;line-height: 40px;background-color: #f3f3f3;border: 1px solid #f1f1f1;}
+.box1{width: 130px;float: left;}
+.box1 input{position: relative;top: 2px;}
+.box2{width: 440px;float: left;}
+.box3{width: 100px;float: left;text-align: center;}
+.box4{width: 100px;float: left;text-align: center;}
+.box5{width: 130px;float: left;text-align: center;}
+.box6{width: 100px;float: left;}
+.top2{width: 1138px;height: 40px;border-bottom: 2px solid #aaa;}
+
+.middle{width: 1138px;border: 1px solid #f1f1f1;}
+.goods{width: 1138px;height: 120px;padding-top: 18px;background-color: #fff4e8;}
+.box11{width: 130px;float: left;}
+.box11 img{width: 80px;height: 80px;vertical-align: top;}
+.box12{width: 210px;float: left;color: #333;}
+.jingzao{color: #fff;background-color: #e2231a;display: inline-block;width: 35px;height: 15px;line-height: 15px;text-align: center;}
+.shengxian{color: #02c555;border: 1px solid #02c555;display: inline-block;width: 50px;height: 15px;line-height: 15px;text-align: center;}
+.box13{width: 230px;float: left;text-indent: 20px;}
+.box14{width: 100px;float: left;text-align: center;color: #333;letter-spacing: 0.5px;}
+.box15{width: 100px;float: left;text-align: center;}
+.box15 .addLow{display: inline-block;width: 16px;height: 22px;border: 1px solid #cacbcb;position: relative;top: -4px;line-height: 22px;cursor: pointer;}
+.box15 .num{display: inline-block;width: 46px;height: 22px;border-top: 1px solid #cacbcb;border-bottom: 1px solid #cacbcb;position: relative;top: -4px;line-height: 22px;}
+.box16{width: 130px;float: left;text-align: center;}
+.box16 div{font-weight: bold;font-size: 13px;color: #000;letter-spacing: 1px;}
+.box17{width: 100px;float: left;}
+.goodsSpace{width: 1138px;height: 40px;border-top: 1px solid #ccc;}
+
+.bottom{width: 1138px;height: 50px;border: 1px solid #f0f0f0;line-height: 50px;margin-top: 20px;}
+.bottom .left{width: 350px;height: 50px;float: left;}
+.bottom .left input{position: relative;top: 2px;}
+.bottom .left a{margin-left: 8px;}
+.bottom .left .clearCar{font-weight: bold;}
+.bottom .right{width: 380px;height: 50px;float: right;}
+.bottom .right .allPrice{width: 260px;height: 40px;margin-top: 5px;float: left;line-height: 16px;}
+.bottom .right .allPrice .str{margin-right: 38px;}
+.bottom .right .allPrice .fontColor1{color: #f00;font-weight: bold;margin: 0 3px;}
+.bottom .right .allPrice .fontColor2{color: #f00;font-weight: bold;font-size: 16px;}
+.bottom .right .balance{width: 96px;height: 50px;background-color: #e64346;color: #fff;font-size: 18px;font-weight: bold;line-height: 50px;text-align: center;float: right;cursor: pointer;}
+
+div.box12 span.word{
+	height: 60px;
+	text-indent: 20px;
+	margin: 0 0 0 5px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+

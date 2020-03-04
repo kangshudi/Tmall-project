@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title></title>
+		<script src="../lib/jquery/dist/jquery.min.js"></script>
+		<link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
+		<script src="../js/register.js"></script>
+	</head>
+	<style type="text/css">
+		div.login_text {
+			color: #C40000;
+			padding: 0;
+			text-align: center;
+		}
+		
+		div.loginInput {
+			margin-bottom: .825rem;
+		}
+	</style>
+
+	<body>
+
+		<div id="loginDiv">
+			<div class="simpleLogo">
+				<img src="//img.alicdn.com/tfs/TB1_Gn8RXXXXXXqaFXXXXXXXXXX-380-54.png">
+			</div>
+			<img class="loginBackgroundImg" id="loginBackgroundImg" src="https://gw.alicdn.com/tfs/TB1m13FwKT2gK0jSZFvXXXnFXXa-1190-600.jpg">
+			<div class="loginSmallDiv" id="loginSmallDiv">
+				<div class="login_text">账户注册</div>
+
+				<div class="loginInput">
+					<span class="inputIcon">
+						 <span class=" glyphicon glyphicon-user"></span>
+					</span>
+					<input type="text" placeholder="需要注册的手机/会员名/邮箱" name="username" id="username" />
+				</div>
+
+				<div class="loginInput">
+					<span class="inputIcon">
+						<span class=" glyphicon glyphicon-lock"></span>
+					</span>
+					<input type="password" placeholder="输入您需要密码" name="password" id="password" />
+				</div>
+
+				<div class="loginInput">
+					<span class="inputIcon">
+						<span class=" glyphicon glyphicon-lock"></span>
+					</span>
+					<input type="password" placeholder="重新输入密码" onchange="check_password()" name="newpassword" id="newpassword" />
+				</div>
+
+				<script type="text/javascript">
+					/*保证密码的一致性*/
+					function check_password() {
+						if($("#password").val() != $("#newpassword").val()) {
+							alert("请保证两次输入密码的一致性！");
+							$("#newpassword").focus();
+						}
+					}
+					/*验证手机号码*/
+					function check_phone() {
+						var reg = /^1[34578]\d{9}$/;
+						if(!reg.test($("#phone").val())) {
+							alert("请输入正确的手机号！");
+							$("#phone").focus();
+						}
+					}
+				</script>
+
+				<!-- <div class="loginInput">
+					<span class="inputIcon">
+						<span class=" glyphicon glyphicon-phone"></span>
+					</span>
+					<input type="text" placeholder="您的手机号码" onchange="check_phone()" name="phone" id="phone" />
+				</div> -->
+
+				<div id="registerBtn">
+					<input type="button" id="btn" class="btn btn-danger" value="注册" />
+				</div>
+
+			</div>
+		</div>
+	</body>
+
+</html>
