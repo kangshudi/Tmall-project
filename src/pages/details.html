@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css公共文件 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- jquery -->
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <!--自己的各种css、js文件-->
+    <link rel="stylesheet" href="../css/details.css">
+    <link rel="stylesheet" href="../font_icon/iconfont.css" />
+    <script src="../js/details.js"></script>
+</head>
+
+<body>
+    <!-- 天猫超市头部导航 -->
+    <div id="site-nav" class="disblock">
+        <div id="sn-bd">
+            <div class="sn-container clear_fixe">
+                <p class="sn-back-home">
+                    <i class="iconfont icon-home"></i>
+                    <a href="">天猫首页</a>
+                </p>
+
+                <p class="login-info">
+                    <em>喵，欢迎来天猫</em>
+                    <a class="sn-login" href="">请登录</a>
+                    <a class="sn-register" href="">免费注册</a>
+                </p>
+
+                <ul class="sn-quick-menu">
+                    <li class="sn-mytaobao">
+                        <div class="sn-menu">
+                            <a class="menu-hd" href="">
+                                我的淘宝
+                                <b></b>
+                            </a>
+
+                            <div class="menu-bd">
+                                <a href="">已买到的宝贝</a>
+                                <a href="">已卖出的宝贝</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="sn-cart">
+                        <i class="iconfont icon-tianmaochaoshigouwuche"></i>
+                        <a href="">购物车</a>
+                    </li>
+
+                    <li class="sn-favorite">
+                        <div class="sn-menu">
+                            <a class="menu-hd" href="">
+                                收藏夹
+                                <b></b>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="sn-separator"></li>
+
+                    <li class="sn-mobile">
+                        <i class="iconfont icon-shouji"></i>
+                        <a href="">手机版</a>
+                    </li>
+
+                    <li class="sn-home">
+                        <a href="">淘宝网</a>
+                    </li>
+
+                    <li class="sn-seller">
+                        <div class="sn-menu">
+                            <a class="menu-hd" href="">
+                                商家支持
+                                <b></b>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="sn-sitemap">
+                        <div class="sn-menu">
+                            <a class="menu-hd" href="">
+                                <i class="iconfont icon-caidan"></i>
+                                网站导航
+                                <b></b>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="header">
+        <div class="headerLayout">
+            <div class="headerCon">
+                <!--首页logo-->
+                <h1 id="mallLogo">
+                    <span class="mlogo">
+                        <a href="">
+                            <s></s>
+                        </a>
+                    </span>
+                </h1>
+
+                <!--城市定位-->
+                <div class="position-city">
+                    <h3>
+                        东莞
+                        <i class="iconfont icon-xialacaidan"></i>
+                    </h3>
+                </div>
+
+                <!--一站式购齐等-->
+                <div class="header-banner">
+                    <ul class="market-feature">
+                        <li>
+                            <a href="">
+                                <i class="iconfont icon-yizhanshi"></i>
+                                一站式购齐
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <i class="iconfont icon-88"></i>
+                                满88包邮
+                            </a>
+                        </li>
+
+                        <li class="license">
+                            <a href="">
+                                <img src="../images/license.png" />
+                            </a>
+                        </li>
+
+                        <li style="margin-right: -33px;margin-top: -63px;">
+                            <a href="">
+                                <img src="../images/bian.png" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--搜索栏-->
+                <div class="mall-search">
+                    <div class="s-combobox">
+                        <div class="s-combobox-input-wrap">
+                            <input type="text" name="" id="" value="" placeholder="搜索天猫超市商品" />
+                        </div>
+                    </div>
+                    <button>搜索</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="big" style="display: block;width: 100%; border-bottom: 1px solid #2f2f2f;">
+        <!-- 内容区 -->
+        <div class="content ">
+            <div class="tm-chaoshi-nav">
+                <div class="layout clear_fixe">
+                    <!--所有产品分类 左浮动  脱文档流-->
+                    <div class="cat">
+                        所有产品分类
+                    </div>
+
+                    <!--右边购物车 有浮动 脱文档流-->
+                    <div class="tm-mcRoot">
+                        <div class="tm-mcHandler">
+                            <a class="tm-money" href="">
+                                <strong>
+                                    ¥0.00
+                                </strong>
+                            </a>
+
+                            <em>丨</em>
+
+                            <a class="tm-weight" href="">
+                                <strong>
+                                    0
+                                </strong>
+                                kg
+                            </a>
+                        </div>
+                        <i class="iconfont icon-tianmaochaoshigouwuche"></i>
+                        <b class="tm-white"></b>
+                        <b class="tm-black"></b>
+                    </div>
+
+                    <!--中间导航 不脱流-->
+                    <div class="nav-bar">
+                        <ul class="clear_fixe">
+                            <li class="index">
+                                <a href="">
+                                    首页
+                                </a>
+                            </li>
+                            <li class="qycg">
+                                <a href="">
+                                    企业采购
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 商品详情区域 放大镜区域 -->
+    <div class="detail">
+        <div class="tm-clear">
+            <!-- <div class="small_box">
+                <span class="mask"></span>
+                <span class="float_layer"></span>
+                <img src="">
+            </div>
+            <div class="big_box">
+                <img src="">
+            </div> 
+            <div class="img_buttom">
+                <img src="${imgUrl4}">
+            </div>
+            -->
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

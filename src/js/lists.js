@@ -56,17 +56,17 @@ $(window).ready(function(){
         var str = ''
         list.forEach((item,index) => {
             str += `
-            <li class="product">
+            <li class="product" data-id="${ item.id }">
             <div class="productInfo">
     
                 <div class="product-img">
-                    <a href="${ item.link }">
+                    <a href="details.html?id=${ item.id }">
                         <img src="${ item.img }" alt="">
                     </a>
                 </div>
     
                 <h3 class="product-title">
-                    <a href="${ item.link }">
+                    <a href="details.html?id=${ item.id }">
                         ${ item.h3 }
                     </a>
                 </h3>
@@ -84,7 +84,7 @@ $(window).ready(function(){
                         </span>
                     </div>
     
-                    <a class="productInfo-cart" href="${ item.link }">
+                    <a class="productInfo-cart" href="details.html?id=${ item.id }">
                         <i class="iconfont icon-tianmaochaoshi-gouwuche"></i>
                     </a>
                 </div>
@@ -213,27 +213,27 @@ $(window).ready(function(){
 
 window.onload = function(){
     // 获得避孕套数据
-    // var li = document.querySelectorAll(".product-list .product")
-    // var arr =[];
-    // for(var i = 0;i < li.length;i++){
-    //     var o = {};
-    //     var img = li[i].querySelector(".product-img img").src;
-    //     var link = li[i].querySelector(".product-img a").href;
-    //     var h3 = li[i].querySelector(".product-title a").innerText;
-    //     var sum = li[i].querySelector(".item-sum strong").innerText;
-    //     var price = li[i].querySelector(".item-price .ui-price strong").innerText;
+     var li = document.querySelectorAll(".product-list .product")
+     var arr =[];
+     for(var i = 0;i < li.length;i++){
+         var o = {};
+         var img = li[i].querySelector(".product-img img").src;
+         var link = li[i].querySelector(".product-img a").href;
+         var h3 = li[i].querySelector(".product-title a").innerText;
+         var sum = li[i].querySelector(".item-sum strong").innerText;
+         var price = li[i].querySelector(".item-price .ui-price strong").innerText;
 
-       
-    //     o.img = img;
-    //     o.link = link;
-    //     o.h3 = h3;
-    //     o.sum = sum;
-    //     o.price = price;
-    //     arr.push(o);
+       	 o.id = i;
+         o.img = img;
+         o.link = link;
+         o.h3 = h3;
+         o.sum = sum;
+         o.price = price;
+         arr.push(o);
 
-    // }
+     }
 
-    // JSON.stringify(arr)
+       JSON.stringify(arr)
 
 
 }
