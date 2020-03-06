@@ -626,9 +626,9 @@ function jinkoulsGoods(){
 			datas_201507200.forEach((item,index) => {
 				//如果a标签想跳转 ${ item.link }
 				str += `
-				<a href="">
+			<a href="../pages/cart.html">
 				<div class="wrap">
-					<img width="160" height="160" src="${ item.img }" alt="${ item.title }">
+					<img class="good-img" width="160" height="160" src="${ item.img }" alt="${ item.title }">
 					<h3></h3>
 					<p class="title">${ item.title }</p>
 					<p class="o-price">
@@ -647,6 +647,25 @@ function jinkoulsGoods(){
 			</a>`;
 				$('.list').html(str)
 			})
+
+			// 加入购物车
+			var goodinfo = []
+			$('.jinkouls .ui-cart').click(function(){
+				alert('加入购物车成功')
+				var o = {}
+				var price = $(this).siblings('.price').children('.j_CurPrice').text()
+				var title = $(this).siblings('.title').text()
+				var img = $(this).siblings('img')[0].src
+				o.price = price
+				o.img = img
+				o.title = title
+				goodinfo.push(o)
+				localStorage.setItem('goods',JSON.stringify(o))
+			})
+			
+
+
+
 
 			// 渲染九宫格单词
 			var datas_201507201 = res.data.resultValue[201507201].data
@@ -679,6 +698,8 @@ function jinkoulsGoods(){
 			})
 
 			$('.m-floor .promo').html(str_pin)
+			
+
 
 		},
 		error:function(){
@@ -701,7 +722,7 @@ function xiuxianlsGoods(){
 			datas_201506256.forEach((item,index) => {
 				//如果a标签想跳转 ${ item.link }
 				str += `
-				<a href="">
+				<a href="../pages/cart.html">
 				<div class="wrap">
 					<img width="160" height="160" src="${ item.img }" alt="${ item.title }">
 					<h3></h3>
@@ -724,6 +745,20 @@ function xiuxianlsGoods(){
 			})
 
 			$('.xiuxianls .list').html(str)
+
+			var goodinfo = []
+			$('.xiuxianls .ui-cart').click(function(){
+				alert('加入购物车成功')
+				var o = {}
+				var price = $(this).siblings('.price').children('.j_CurPrice').text()
+				var title = $(this).siblings('.title').text()
+				var img = $(this).siblings('img')[0].src
+				o.price = price
+				o.img = img
+				o.title = title
+				goodinfo.push(o)
+				localStorage.setItem('goods',JSON.stringify(goodinfo))
+			})
 
 			// 渲染九宫格单词
 			var datas_201506257 = res.data.resultValue[201506257].data
@@ -757,6 +792,7 @@ function xiuxianlsGoods(){
 
 			$('.xiuxianls .promo').html(str_pin)
 
+
 		},
 		error:function(){
 			console.log('请求失败')
@@ -780,7 +816,7 @@ function grhlGoods(){
 			datas_2015062522.forEach((item,index) => {
 				//如果a标签想跳转 ${ item.link }
 				str += `
-				<a href="">
+				<a href="../pages/cart.html">
 				<div class="wrap">
 					<img width="160" height="160" src="${ item.img }" alt="${ item.title }">
 					<h3></h3>
@@ -801,6 +837,21 @@ function grhlGoods(){
 			</a>`;
 			})
 			$('.grhl .list').html(str)
+
+
+			var goodinfo = []
+			$('.grhl .ui-cart').click(function(){
+				alert('加入购物车成功')
+				var o = {}
+				var price = $(this).siblings('.price').children('.j_CurPrice').text()
+				var title = $(this).siblings('.title').text()
+				var img = $(this).siblings('img')[0].src
+				o.price = price
+				o.img = img
+				o.title = title
+				goodinfo.push(o)
+				localStorage.setItem('goods',JSON.stringify(goodinfo))
+			})
 
 			// 渲染九宫格单词
 			var datas_2015062523 = res.data.resultValue[2015062523].data
@@ -840,6 +891,8 @@ function grhlGoods(){
 		}
 	})
 }
+
+
 
 
 

@@ -71,7 +71,7 @@ p.login-info{
 	float: left;
 	height: 26px;
 	line-height: 26px;
-	display: inline-block;
+	/* display: inline-block; */
 	font-size: 0;
 }
 

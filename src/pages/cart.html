@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css公共文件 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- jquery -->
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <!--自己的各种css、js文件-->
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../font_icon/iconfont.css" />
+    <script src="../js/cart.js"></script>
+</head>
+
+<body>
+    <!-- 天猫超市头部导航 -->
+    <div id="site-nav" class="disblock">
+        <div id="sn-bd">
+            <div class="sn-container clear_fixe">
+                <p class="sn-back-home">
+                    <i class="iconfont icon-home"></i>
+                    <a href="">天猫首页</a>
+                </p>
+
+                <p class="login-info">
+                    <em>喵，欢迎来天猫</em>
+                    <a class="sn-login" href="">请登录</a>
+                    <a class="sn-register" href="">免费注册</a>
+                </p>
+
+                <ul class="sn-quick-menu">
+                    <li class="sn-mytaobao">
+                        <div class="sn-menu">
+                            <a class="menu-hd" href="">
+                                我的淘宝
+                                <b></b>
+                            </a>
+
+                            <div class="menu-bd">
+                                <a href="">已买到的宝贝</a>
+                                <a href="">已卖出的宝贝</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="sn-cart">
+                        <i class="iconfont icon-tianmaochaoshigouwuche"></i>
+                        <a href="">购物车</a>
+                    </li>
+
+                    <li class="sn-favorite">
+                        <div class="sn-menu">
+                            <a class="menu-hd" href="">
+                                收藏夹
+                                <b></b>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="sn-separator"></li>
+
+                    <li class="sn-mobile">
+                        <i class="iconfont icon-shouji"></i>
+                        <a href="">手机版</a>
+                    </li>
+
+                    <li class="sn-home">
+                        <a href="">淘宝网</a>
+                    </li>
+
+                    <li class="sn-seller">
+                        <div class="sn-menu">
+                            <a class="menu-hd" href="">
+                                商家支持
+                                <b></b>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="sn-sitemap">
+                        <div class="sn-menu">
+                            <a class="menu-hd" href="">
+                                <i class="iconfont icon-caidan"></i>
+                                网站导航
+                                <b></b>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 天猫头部  包含logo 搜索栏 -->
+    <div id="header">
+        <div class="headerLayout">
+            <div class="headerCon">
+                <!--首页logo-->
+                <h1 id="mallLogo">
+                    <span class="mlogo">
+                        <a href="">
+                            <s></s>
+                        </a>
+                    </span>
+                </h1>
+
+                <!--搜索栏-->
+                <div class="mall-search">
+                    <div class="s-combobox">
+                        <div class="s-combobox-input-wrap">
+                            <input type="text" name="" id="" value="" placeholder="搜索天猫超市商品" />
+                        </div>
+                    </div>
+                    <button>搜索</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 导航指引 -->
+    <div class="zhiying">
+        <div class="zhiying_tab">
+            <strong>您的位置：</strong>
+            <ol>
+                <li><a href="">首页</a></li>
+                <li>></li>
+                <li><a href="">购物车</a></li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="big_content">
+
+
+        <div class="content">
+            <table class="shop">
+                <thead>
+                    <tr class="tbnav">
+                        <th class="Son1">商品</th>
+                        <th class="Son2">数量</th>
+                        <th class="Son3">价格</th>
+                        <th class="Son4">总价</th>
+                        <th class="Son5">操作</th>
+                    </tr>
+                </thead>
+                 
+                <tbody class="shopS">
+                    <!--<tr class="shopList">-->
+                        <!--<td class="imgTd"><img class="shops" src="../images/vans.jpg" alt="" srcset=""></td>
+                        <td class="titleTd">
+                            <h6>Vans范斯 经典系列 Old Skool板鞋运动鞋 低帮经典款男女官方正品</h6>
+                            <span>ID:#2001</span>
+                            <span>Size:37</span>
+                        </td>
+                        <td class="Son2">
+                            <span class="reduce">-</span>
+                            <input type="text" value="1" class="count">
+                            <span class="add">+</span>
+                        </td>
+                        <td class="Son3">
+                            <del class="oriPrice">399.99 py6</del>
+                            <b class="nowPrice">299.98 py6</b>
+                        </td>
+                        <td class="Son4">
+                            <span class="priceAll">399.99 py6</span>
+                            <span class="saveAll">You save 100.01 py6</span>
+                        </td>
+                        <td class="Son5">
+                            <img class="del" src="../images/del.png" alt="">
+                        </td>-->
+                    <!--</tr>-->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>总价:</td>
+                        <td id="cTotal"></td>
+                    </tr>
+                    <tr>
+                        <td id="cleanCart">
+                            <!-- <input type="button" name="cleanC" id="cleanC" value="清空购物车" /> -->
+                            <div class="cleanC" id="cleanC">
+                                清空购物车
+                            </div>
+                        </td>
+                        <!-- <td id="sTotal">You save 68.00 py6</td> -->
+                    </tr>
+                </tfoot>
+                
+            </table>
+        </div>
+
+    </div>
+
+    <div class="footer footer-2" id="footer">
+		<div class="maotou">
+			<img src="https://how2j.cn/tmall/img/site/cateye.png" class="cateye" id="cateye">
+		</div>
+		<div class="copyright" id="copyright">
+			<div class="white_link">
+				<a href="">关于天猫</a>
+				<a href=""> 帮助中心</a>
+				<a href="">开放平台</a>
+				<a href="">  诚聘英才</a>
+				<a href="">联系我们</a>
+				<a href="">网站合作</a>
+				<a href="">法律声明</a>
+				<a href="">知识产权</a>
+				<a href="">  廉正举报 </a>
+			</div>
+			<div class="white_link">
+				<a href=""> 阿里巴巴集团</a><span class="slash">|</span>
+				<a href=""> 淘宝网</a><span class="slash">|</span>
+				<a href="">天猫 </a><span class="slash">|</span>
+				<a href="">  聚划算</a><span class="slash">|</span>
+				<a href="">全球速卖通</a><span class="slash">|</span>
+				<a href="">阿里巴巴国际交易市场</a><span class="slash">|</span>
+				<a href="">1688</a><span class="slash">|</span>
+				<a href="">阿里妈妈</a><span class="slash">|</span>
+				<a href="">  阿里旅行·去啊  </a><span class="slash">|</span>
+				<a href="">  阿里云计算    </a><span class="slash">|</span>
+				<a href="">  阿里通信     </a><span class="slash">|</span>
+				<a href="">  YunOS    </a><span class="slash">|</span>
+				<a href="">  阿里旅行·去啊  </a><span class="slash">|</span>
+				<a href="">   万网  </a><span class="slash">|</span>
+				<a href="">  高德   </a><span class="slash">|</span>
+				<a href=""> 优视    </a><span class="slash">|</span>
+				<a href="">  友盟   </a><span class="slash">|</span>
+				<a href="">  虾米   </a><span class="slash">|</span>
+				<a href="">  天天动听 </a><span class="slash">|</span>
+				<a href="">  来往   </a><span class="slash">|</span>
+				<a href="">  钉钉   </a><span class="slash">|</span>
+				<a href="">  支付宝      </a>
+			</div>
+			<div class="license">
+				<span>增值电信业务经营许可证： 浙B2-20110446</span>
+				<span>网络文化经营许可证：浙网文[2015]0295-065号</span>
+				<span>互联网医疗保健信息服务 审核同意书 浙卫网审【2014】6号 </span>
+				<span>互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</span>
+				<div style="float: left;">
+					<img src="https://how2j.cn/tmall/img/site/copyRight1.jpg">
+				</div>
+				<div class="copyRightYear">© 2003-2019 TMALL.COM 版权所有</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
