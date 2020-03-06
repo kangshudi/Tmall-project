@@ -728,7 +728,15 @@ div.cleanC{
     margin-right: 20px;
 }
 
-
+span.tm-zd{
+	background-color: #FF0036;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 2px;
+	width: 90px;
+}
 
 
 

@@ -647,8 +647,6 @@ function jinkoulsGoods(){
 			</a>`;
 				$('.list').html(str)
 			})
-
-			// 加入购物车
 			var goodinfo = []
 			$('.jinkouls .ui-cart').click(function(){
 				alert('加入购物车成功')
@@ -660,9 +658,8 @@ function jinkoulsGoods(){
 				o.img = img
 				o.title = title
 				goodinfo.push(o)
-				localStorage.setItem('goods',JSON.stringify(o))
+				localStorage.setItem('goods',JSON.stringify(goodinfo))
 			})
-			
 
 
 

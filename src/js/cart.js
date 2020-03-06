@@ -44,15 +44,16 @@ window.onload = function(){
 
 var tbody = document.querySelector(".shopS");
 
-    var datas = JSON.parse(localStorage.getItem('goods'))
-    console.log(datas)
-
-var res = datas.map(function(item,index){
+    var data = JSON.parse(localStorage.getItem('goods'))
+    console.log(data)
+var tmArr = ['天猫直达','天猫物流','天猫快递','天猫促销','百亿大补帖','38节活动价格']
+var x = this.Math.round(this.Math.random() * (tmArr.length - 1)) 
+var res = data.map(function(item){
 return  `<tr class="shopList"><td class="imgTd"><img  class="shops" src="${item.img}" alt="" srcset=""></td>
 <td class="titleTd">
     <h6>${item.title}</h6>
-    <span></span>
-    <span></span>
+    <span class="tm-zd">${ tmArr[x] }</span>
+    
 </td>
 <td class="Son2">
     <span class="reduce">-</span>
